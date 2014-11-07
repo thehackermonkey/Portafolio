@@ -1,0 +1,152 @@
+doctype
+html
+	include head
+
+	body
+		.splash
+			.container
+				.splash-top-items
+					.half.name
+						h1 Hans R.
+					.half.switch
+						.switch-element English
+						.switch-element Español
+				.splash-main
+					img(src='img/h-logo.png')
+					.description Web Developer + Project Manager + Strategic Design
+					.menu
+						.menu-item.about
+							img(src='img/about.png')
+							.lgnd-about About
+
+						.menu-item.work
+							img(src='img/work.png')
+							.lgnd-work Work
+
+						.menu-item.contact
+							img(src='img/contact.png')
+							.lgnd-contact Contact
+		
+		.about-h.hider
+			.top-menu
+					.tm-item.tp-home
+						i.fa.fa-home
+						p.m-label Home
+					.tm-item.tp-about.a-selected
+						i.fa.fa-user
+						p About
+					.tm-item.tp-work
+						i.fa.fa-gears
+						p Work
+					.tm-item.tp-contact
+						i.fa.fa-comments-o
+						p Contact
+			.container
+				.bio
+					img(src='http://placekitten.com/g/200/200')
+					h1 Hans R.
+					h2 About
+					p Lorem ipsum Minim id proident ex non non labore sit non nostrud est.
+						| In eiusmod do officia id ut esse officia mollit nulla.
+						| Enim fugiat adipisicing aliqua in nisi dolore aliqua Excepteur dolore aliqua dolore.
+						| Aliquip anim id enim cupidatat occaecat laboris dolor dolor aliqua laboris.
+						| In culpa nulla laboris mollit magna ullamco ut aliquip in et elit eiusmod.
+						| Sint elit anim anim officia Excepteur est labore nostrud ea.
+						| Magna commodo id id elit pariatur consectetur culpa laboris.
+						| Anim ad consectetur commodo non non fugiat mollit.
+
+					.stuff-title Stuff I'm good at:
+
+					ul
+						li HTML/CSS
+						li UX / UI Design
+						li Responsive Design
+						li Javascript
+					ul
+						li Node JS
+						li Python
+						li Strategic Design
+						li Photo manipulation
+
+		.work-h.hider
+			.top-menu
+					.tm-item.tp-home
+						i.fa.fa-home
+						p Home
+					.tm-item.tp-about
+						i.fa.fa-user
+						p About
+					.tm-item.tp-work.w-selected
+						i.fa.fa-gears
+						p Work
+					.tm-item.tp-contact
+						i.fa.fa-comments-o
+						p Contact
+			.container
+				.projects
+					.Project
+						.project-img
+							img(src='img/alexandria/a-screen-1.png')
+
+						.project-description 
+							a(href='#' data-featherlight="#alexandria").title Proyecto Alexandria
+							p Project Manager, Front End Design + Code
+					.Project
+						.project-img
+							img(src='http://placekitten.com/g/400/400')
+						.project-description 
+							.title Some
+							
+							p Lorem ipsum Elit officia esse sunt id exercitation esse amet qui irure fugiat. Dolor amet amet deserunt ut sit eu fugiat aliqua do officia officia.
+					.Project
+						.project-img
+							img(src='http://placekitten.com/g/400/400')
+						.project-description 
+							.title Some
+							
+							p Lorem ipsum Elit officia esse sunt id exercitation esse amet qui irure fugiat. Dolor amet amet deserunt ut sit eu fugiat aliqua do officia officia.
+					.Project
+
+						.project-img
+							img(src='http://placekitten.com/g/400/400')
+						.project-description 
+							.title Some
+							
+							p Lorem ipsum Elit officia esse sunt id exercitation esse amet qui irure fugiat. Dolor amet amet deserunt ut sit eu fugiat aliqua do officia officia.
+
+		.contact-h.hider
+			.top-menu
+					.tm-item.tp-home
+						i.fa.fa-home
+						p Home
+					.tm-item.tp-about
+						i.fa.fa-user
+						p About
+					.tm-item.tp-work
+						i.fa.fa-gears
+						p Work
+					.tm-item.tp-contact.c-selected
+						i.fa.fa-comments-o
+						p Contact
+			.container
+				h1 Hablemos!
+				.contact-me
+					input(type="text" placeholder="Nombre o empresa"  name="nombre")#name
+					br
+					input(type="text" placeholder="E-mail"  name="e-mail")#email
+					br
+					textarea(placeholder="Mensaje" value="mensaje" name="mensaje")#message
+					br
+					input(type="submit" value="Enviar")#submit.enviar
+
+
+		.ghost
+			#alexandria.light-container
+				.title Alexandria
+				img(src='img/alexandria/a-1.png')
+				img(src='img/alexandria/a-2.png')
+				img(src='img/alexandria/a-3.png')
+				img(src='img/alexandria/a-4.png')
+	script(src='app/bower_components/jquery/dist/jquery.js')
+	script(src="js/functions.js")
+	script(src="http://rawgithub.com/noelboss/featherlight/master/release/featherlight.min.js" type="text/javascript" charset="utf-8")

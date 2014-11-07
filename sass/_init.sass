@@ -1,0 +1,43 @@
+//MIXINS & VARIABLES
+@mixin helvetica($weight)
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+	font-weight: $weight
+@mixin border-radius($x)
+	border-radius: $x
+	-webkit-border-radius: $x
+	-moz-border-radius: $x
+@mixin vertical-align
+	position: relative
+	top: 50%
+	-webkit-transform: translateY(-50%)
+	-ms-transform: translateY(-50%)
+	transform: translateY(-50%)
+
+
+$green: #7CE30B
+$blue: #00CCCC
+$yellow: #D99C35
+$upspace: 10%
+$innerspace: 5%
+$gray: #4D4D4D
+//default styles
+html, body
+	height: 100%
+	+helvetica(300)
+	font-size: 18px
+	color: $gray
+	::-webkit-scrollbar
+		display: none
+
+h1
+	font-size: 3em
+	+helvetica(400)
+h2
+	font-size: 2.5em
+h3
+	font-size: 2em
+h2
+	font-size: 1.5em
+img
+	max-width: 100%
+	height: auto
